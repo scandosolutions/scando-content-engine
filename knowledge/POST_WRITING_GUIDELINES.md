@@ -90,6 +90,11 @@ Every draft written in the `content` field must rigorously obey these 10 protoco
   6. *The Low-Friction Reflection*: An engaging closing question for executive discussion.
 * **The Out-Loud Reading Test**: If you cannot read the entire post aloud smoothly without pausing awkwardly or running out of breath, the copy must be restructured.
 
+### Protocol 11: The Continuity Anchor (الربط التراكمي بالمنشورات السابقة)
+* **Never publish in isolation**: On personal branding channels (`ACC-009` Noura Ashraf), content is a continuing conversation between real human beings.
+* **Rule**: Always review the previously published post on the same channel. If the current post builds upon, details, or resolves a question from a prior post, **explicitly reference it in Line 1 or 2** (e.g. *«في البوست اللي فات، اتكلمنا عن كذا.. بس يعني إيه كذا أصلاً؟»*).
+* **The Cognitive Benefit**: Creates an episodic masterclass dynamic that hooks returning readers, deepens intellectual authority, and avoids the disjointed "throwaway post" syndrome.
+
 ---
 
 ## 4. Next Step: Quality Gate Review

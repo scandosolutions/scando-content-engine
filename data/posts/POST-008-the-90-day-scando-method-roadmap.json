@@ -1,7 +1,7 @@
 {
   "id": "POST-008",
   "account_ids": [
-    "ACC-008"
+    "ACC-009"
   ],
   "title": "قائمة فحص التشغيل المتحكم به (Controlled Go-Live): تشغيل نظامين بدون حرق الفريق",
   "format": "Checklist Post",

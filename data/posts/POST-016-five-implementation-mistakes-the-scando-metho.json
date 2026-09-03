@@ -1,7 +1,7 @@
 {
   "id": "POST-016",
   "account_ids": [
-    "ACC-008"
+    "ACC-009"
   ],
   "title": "سبرنت 1: ليه بننضف البيانات الأساسية قبل ما نكتب سطر كود واحد؟",
   "format": "Thought Leadership",

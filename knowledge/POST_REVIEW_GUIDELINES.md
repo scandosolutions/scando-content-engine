@@ -117,6 +117,8 @@ The reviewer must run the copy through these 8 strict screens:
    * [ ] **Zero Fatalistic Failure Language**: Reject any post that uses words like *«فشل / بتفشل / المشروعات الفاشلة»*. Operational friction must be diagnosed with analytical consultative precision: *«ما بتوصلش للنتيجة المرجوة منها»*, *«ما بتحققش الأهداف المطلوبة»*, *«بتتعثر في تحقيق العائد»*.
 10. **Test 5.10: The Baton-Passing Flow Audit (Out-Loud Reading Screen)**:
     * [ ] **Smooth Narrative Transition**: Does each paragraph logically pick up from the preceding paragraph? Are sentences single-clause and readable in one breath? (Fail if there are overloaded multi-clause sentences or sudden unexplained leaps). Must pass the out-loud reading test without cognitive friction.
+11. **Test 5.11: The Continuity Anchor Screen (Personal Brand Channel Check)**:
+    * [ ] **Cross-Post Narrative Continuity**: On personal accounts (`ACC-009` Noura Ashraf), does the post logically acknowledge or build upon the previous discussion if related (e.g. *«في البوست اللي فات..»*)? Ensure the post feels like an ongoing conversation between human beings, not a disconnected broadcast.
 
 ---
 
