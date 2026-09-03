@@ -1,0 +1,21 @@
+{
+  "id": "POST-015",
+  "account_id": "ACC-001",
+  "title": "Bespoke Portals vs. ERP Desktop Clutter: Multi-Branch Ordering for GCC Retail",
+  "format": "Technical Breakdown",
+  "status": "backlog",
+  "scheduled_date": "",
+  "published_date": "",
+  "topic_ids": [
+    "TOPIC-006",
+    "TOPIC-005"
+  ],
+  "objective_ids": [
+    "OBJ-002"
+  ],
+  "persona_ids": [
+    "PERS-006"
+  ],
+  "content": "A retail and restaurant chain across Riyadh and Dubai operating 45 branches faced an adoption crisis:\n\nBranch supervisors were supposed to submit daily replenishment orders directly into Odoo.\n\nInstead:\n- They forgot passwords.\n- They got confused by complex ERP accounting and purchase requisition tabs.\n- They resorted back to sending chaotic voice notes on WhatsApp to the central commissary.\n\nWhy? Because giving a retail store manager full access to enterprise ERP desktop forms is like giving someone a airplane cockpit to drive to the grocery store.\n\nScando built a bespoke, lightweight Progressive Web App (PWA) layer connected to Odoo's backend:\n→ Simple visual menu: Branch managers tap items, select quantities, and click «Submit Order».\n→ Strict Order Windows: Cutoff times (e.g. 4:00 PM) automatically enforced by API rules.\n→ Live Delivery Tracking: Branch receives push notifications when the distribution center dispatches the truck.\n→ Instant Back-End Processing: The order lands immediately in central Odoo as an automated delivery picking slip without human data entry.\n\nResult:\n- 100% branch compliance within 48 hours.\n- Zero WhatsApp ordering chaos.\n- Central warehouse cut requisition processing time from 4 hours to 15 minutes.\n\nUse Odoo as your enterprise database engine. Build consumer-grade interfaces for your frontline operators.\n\nLet's discuss how tailored app layers can elevate your multi-branch operations in KSA and the UAE.",
+  "notes": "Targeted at GCC operations directors in retail, distribution, and hospitality. Solves the branch-to-headquarters ordering bottleneck."
+}

@@ -1,0 +1,8 @@
+{
+  "id": "TOPIC-008",
+  "title": "Odoo Functional Mastery & Consulting Careers",
+  "title_ar": "احتراف استشارات أودو وتطوير المسار المهني",
+  "description": "Practical education and case-study teardowns from Odoo School: real business workflows, passing official certifications, transitioning from accountant to ERP consultant, and leading successful deployments.",
+  "objective_ids": ["OBJ-005"],
+  "persona_ids": ["PERS-005"]
+}

@@ -1,0 +1,8 @@
+{
+  "id": "TOPIC-001",
+  "title": "ERP Failure & Project Rescue",
+  "title_ar": "فشل مشاريع البرمجيات وإنقاذها",
+  "description": "Why 70% of ERP implementations fail in growing companies, the root causes of frontline adoption rejection, and battle-tested protocols to de-risk or turnaround stalled projects.",
+  "objective_ids": ["OBJ-001", "OBJ-004"],
+  "persona_ids": ["PERS-001", "PERS-002", "PERS-006"]
+}

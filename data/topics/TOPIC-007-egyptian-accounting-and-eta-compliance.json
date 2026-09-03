@@ -1,0 +1,8 @@
+{
+  "id": "TOPIC-007",
+  "title": "Egyptian Accounting, ETA E-Invoicing & Audit",
+  "title_ar": "المحاسبة المصرية، الفاتورة الإلكترونية وانضباط الميزان",
+  "description": "Practical navigation of Egyptian Tax Authority (ETA) e-invoicing and e-receipts integration, automated journal entries, trial balance reconciliation, and transitioning financial teams away from fragile spreadsheets.",
+  "objective_ids": ["OBJ-003", "OBJ-004"],
+  "persona_ids": ["PERS-004", "PERS-001"]
+}

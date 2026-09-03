@@ -1,0 +1,210 @@
+body {
+    font-family: 'Montserrat', 'IBM Plex Sans Arabic', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background-color: #f1f5f9;
+    color: #1f2937;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* ── Arabic Typography & Direction ─────────────────── */
+[dir="auto"], [dir="rtl"], .arabic-text {
+    font-family: 'IBM Plex Sans Arabic', 'Montserrat', sans-serif;
+    line-height: 1.8;
+}
+
+/* ── Platform badges (Brand Colors) ──────────────── */
+.badge-linkedin {
+    background-color: rgba(0, 119, 181, 0.1);
+    color: #0077b5;
+    border: 1px solid rgba(0, 119, 181, 0.25);
+}
+.badge-facebook {
+    background-color: rgba(24, 119, 242, 0.1);
+    color: #1877f2;
+    border: 1px solid rgba(24, 119, 242, 0.25);
+}
+.badge-instagram {
+    background-color: rgba(228, 64, 95, 0.1);
+    color: #e4405f;
+    border: 1px solid rgba(228, 64, 95, 0.25);
+}
+.badge-x,
+.badge-twitter {
+    background-color: rgba(15, 23, 42, 0.08);
+    color: #0f172a;
+    border: 1px solid rgba(15, 23, 42, 0.2);
+}
+.badge-youtube {
+    background-color: rgba(255, 0, 0, 0.09);
+    color: #dc2626;
+    border: 1px solid rgba(255, 0, 0, 0.25);
+}
+.badge-tiktok {
+    background-color: rgba(0, 0, 0, 0.07);
+    color: #000000;
+    border: 1px solid rgba(0, 0, 0, 0.18);
+}
+.badge-blog,
+.badge-web {
+    background-color: rgba(5, 150, 105, 0.1);
+    color: #059669;
+    border: 1px solid rgba(5, 150, 105, 0.25);
+}
+.badge-all {
+    background-color: #F1F5F9;
+    color: #475569;
+    border: 1px solid #E2E8F0;
+}
+
+/* ── Status badges ────────────────────────────────── */
+.status-idea        { background-color: #F1F5F9; color: #9CA3AF; }
+.status-researching { background-color: #F1F5F9; color: #D97706; }
+.status-writing     { background-color: #F1F5F9; color: #2563EB; }
+.status-this_month  { background-color: #FEF3C7; color: #B45309; }
+.status-scheduled   { background-color: #F1F5F9; color: #7C3AED; }
+.status-published   { background-color: #F1F5F9; color: #059669; }
+.status-backlog     { background-color: #F1F5F9; color: #64748B; }
+
+/* ── Filter buttons ───────────────────────────────── */
+.filter-btn                    { transition: all 0.2s ease-out; }
+.filter-btn.active             { background-color: #1c58dd; color: #ffffff; border-color: #1c58dd; }
+.filter-btn:not(.active):hover { background-color: #EFF6FF; color: #1c58dd; border-color: #1c58dd; }
+.filter-btn:focus-visible      { outline: 2px solid #1c58dd; outline-offset: 2px; }
+
+/* ── Cards ────────────────────────────────────────── */
+.idea-card { transition: transform 0.2s ease-out, box-shadow 0.2s ease-out; }
+.idea-card:hover { transform: translateY(-2px); box-shadow: 0 8px 20px rgba(0,0,0,0.08); }
+
+/* ── Description clamp ────────────────────────────── */
+.line-clamp-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.line-clamp-3 {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+/* ── Drop zone (file:// fallback) ─────────────────── */
+#drop-zone           { border: 2px dashed #1c58dd; transition: background-color 0.2s; }
+#drop-zone.drag-over { background-color: #EFF6FF; }
+
+/* ── Brand bar ────────────────────────────────────── */
+.brand-bar {
+    display: inline-block;
+    width: 50px;
+    height: 3px;
+    background-color: #00f260;
+    border-radius: 2px;
+    margin-bottom: 0.25rem;
+}
+
+/* ── Topic badges ─────────────────────────────────── */
+.topic-badge { background-color: #F0F4FF; color: #1c58dd; border: 1px solid #C7D7F9; }
+
+/* ── Sidebar Navigation ────────────────────────────── */
+.sidebar-nav-item {
+    color: #94a3b8;
+    transition: all 0.15s ease-in-out;
+}
+.sidebar-nav-item:hover:not(.active) {
+    color: #f8fafc;
+    background-color: rgba(255, 255, 255, 0.07);
+}
+.sidebar-nav-item.active {
+    background-color: #1c58dd;
+    color: #ffffff;
+    font-weight: 600;
+    box-shadow: 0 2px 6px rgba(28, 88, 221, 0.35);
+}
+.sidebar-nav-item.active span:last-child {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+}
+
+/* ── Calendar ─────────────────────────────────────── */
+.calendar-nav-btn {
+    width: 34px;
+    height: 34px;
+    border-radius: 999px;
+    border: 1px solid #d1d5db;
+    color: #1f2937;
+    background: #ffffff;
+    font-weight: 700;
+    transition: all 0.2s ease-out;
+}
+
+.calendar-nav-btn:hover {
+    border-color: #1c58dd;
+    color: #1c58dd;
+    background: #eff6ff;
+}
+
+.calendar-nav-btn:focus-visible,
+.calendar-select:focus-visible,
+.calendar-post:focus-visible {
+    outline: 2px solid #1c58dd;
+    outline-offset: 2px;
+}
+
+.calendar-post {
+    transition: border-color 0.2s ease-out, box-shadow 0.2s ease-out;
+}
+
+.calendar-post:hover {
+    border-color: #1c58dd;
+    box-shadow: 0 3px 10px rgba(28, 88, 221, 0.12);
+}
+
+.topic-rate {
+    background: #F8FAFC;
+    border: 1px solid #e5e7eb;
+}
+
+.topic-action-btn:focus-visible {
+    outline: 2px solid #1c58dd;
+    outline-offset: 2px;
+}
+
+.idea-highlight {
+    border-color: #1c58dd !important;
+    box-shadow: 0 0 0 3px rgba(28, 88, 221, 0.2), 0 10px 24px rgba(28, 88, 221, 0.16);
+}
+
+@media (max-width: 1279px) {
+    .calendar-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 767px) {
+    .calendar-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ── Posts Kanban & Drawer ────────────────────────── */
+.post-card {
+    transition: transform 0.15s ease-out, border-color 0.15s ease-out, box-shadow 0.15s ease-out;
+}
+.post-card:hover {
+    transform: translateY(-2px);
+    border-color: #1c58dd !important;
+    box-shadow: 0 8px 18px rgba(28, 88, 221, 0.12);
+}
+
+/* ── Reduced motion ───────────────────────────────── */
+@media (prefers-reduced-motion: reduce) {
+    .idea-card,
+    .post-card,
+    .filter-btn,
+    .nav-tab,
+    #drop-zone,
+    .calendar-nav-btn,
+    .calendar-post { transition: none; }
+}

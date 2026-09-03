@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scando Content Engine</title>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts: Montserrat (English Brand) + IBM Plex Sans Arabic (Arabic Brand) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="h-screen w-screen overflow-hidden bg-[#f8fafc] text-slate-800 antialiased flex">
+
+    <!-- ═══════════════════════════════════════════════════════════════════════
+         PINNED LEFT SIDEBAR (IMPECCABLE ARCHITECTURE)
+    ════════════════════════════════════════════════════════════════════════ -->
+    <aside id="app-sidebar" class="w-64 flex-shrink-0 h-screen bg-[#0b1329] border-r border-slate-800/80 flex flex-col z-30 select-none">
+        
+        <!-- Sidebar Brand Header -->
+        <div class="p-5 border-b border-slate-800/80 flex flex-col gap-2">
+            <div class="flex items-center gap-2">
+                <span class="w-8 h-1 bg-[#00f260] rounded-full"></span>
+                <span class="text-[11px] font-bold uppercase tracking-widest text-slate-400">Scando Solutions</span>
+            </div>
+            <div class="flex items-center justify-between">
+                <h1 class="text-base font-bold text-white tracking-tight">Content Engine</h1>
+                <span class="text-[10px] font-bold text-emerald-400 bg-emerald-950/80 border border-emerald-800/60 px-2 py-0.5 rounded-full">
+                    Sep 2026
+                </span>
+            </div>
+        </div>
+
+        <!-- Sidebar Navigation Items -->
+        <div class="flex-1 overflow-y-auto px-3 py-4 space-y-6">
+            
+            <!-- Group 1: Production Workspace (Posts & Topics) -->
+            <div>
+                <div class="text-[10px] font-bold uppercase tracking-wider text-slate-500 px-3 mb-2">
+                    Production Workspace
+                </div>
+                <nav class="space-y-1">
+                    <!-- Posts (Home) -->
+                    <button id="tab-posts" onclick="switchView('posts')"
+                            class="sidebar-nav-item active w-full flex items-center justify-between px-3 py-2.5 rounded-xl text-sm transition-colors">
+                        <div class="flex items-center gap-3">
+                            <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="3" y="3" width="18" height="18" rx="2"/>
+                                <path d="M9 3v18"/>
+                                <path d="M15 3v18"/>
+                            </svg>
+                            <span>Content Posts</span>
+                        </div>
+                        <span id="badge-posts-count" class="text-xs font-semibold px-2 py-0.5 rounded-md bg-white/10 text-white">24</span>
+                    </button>
+
+                    <!-- Topics (Content Pillars directly driving production) -->
+                    <button id="tab-topics" onclick="switchView('topics')"
+                            class="sidebar-nav-item w-full flex items-center justify-between px-3 py-2.5 rounded-xl text-sm transition-colors">
+                        <div class="flex items-center gap-3">
+                            <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"/>
+                                <line x1="7" y1="7" x2="7.01" y2="7"/>
+                            </svg>
+                            <span>Content Topics</span>
+                        </div>
+                        <span class="text-xs font-semibold px-2 py-0.5 rounded-md bg-slate-800 text-slate-400">8</span>
+                    </button>
+                </nav>
+            </div>
+
+            <!-- Group 2: Strategic Foundation (Objectives, Personas, Accounts) -->
+            <div>
+                <div class="text-[10px] font-bold uppercase tracking-wider text-slate-500 px-3 mb-2">
+                    Strategic Foundation
+                </div>
+                <nav class="space-y-1">
+                    <!-- Objectives -->
+                    <button id="tab-objectives" onclick="switchView('objectives')"
+                            class="sidebar-nav-item w-full flex items-center justify-between px-3 py-2.5 rounded-xl text-sm transition-colors">
+                        <div class="flex items-center gap-3">
+                            <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"/>
+                                <circle cx="12" cy="12" r="6"/>
+                                <circle cx="12" cy="12" r="2"/>
+                            </svg>
+                            <span>Objectives</span>
+                        </div>
+                        <span class="text-xs font-semibold px-2 py-0.5 rounded-md bg-slate-800 text-slate-400">5</span>
+                    </button>
+
+                    <!-- Personas -->
+                    <button id="tab-personas" onclick="switchView('personas')"
+                            class="sidebar-nav-item w-full flex items-center justify-between px-3 py-2.5 rounded-xl text-sm transition-colors">
+                        <div class="flex items-center gap-3">
+                            <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                                <circle cx="9" cy="7" r="4"/>
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                            </svg>
+                            <span>Target Personas</span>
+                        </div>
+                        <span class="text-xs font-semibold px-2 py-0.5 rounded-md bg-slate-800 text-slate-400">6</span>
+                    </button>
+
+                    <!-- Accounts -->
+                    <button id="tab-accounts" onclick="switchView('accounts')"
+                            class="sidebar-nav-item w-full flex items-center justify-between px-3 py-2.5 rounded-xl text-sm transition-colors">
+                        <div class="flex items-center gap-3">
+                            <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/>
+                                <path d="M13.73 21a2 2 0 0 1-3.46 0"/>
+                            </svg>
+                            <span>Publishing Accounts</span>
+                        </div>
+                        <span class="text-xs font-semibold px-2 py-0.5 rounded-md bg-slate-800 text-slate-400">9</span>
+                    </button>
+                </nav>
+            </div>
+
+        </div>
+
+        <!-- Sidebar Footer -->
+        <div class="p-4 border-t border-slate-800/80 flex items-center justify-between text-xs text-slate-400">
+            <div class="flex items-center gap-2">
+                <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                <span>GitHub Pages Ready</span>
+            </div>
+            <span class="font-mono text-[10px] text-slate-500">v2.5</span>
+        </div>
+
+    </aside>
+
+    <!-- ═══════════════════════════════════════════════════════════════════════
+         FULL-SPACE MAIN CANVAS (100% FLUID & DISTRACTION-FREE)
+    ════════════════════════════════════════════════════════════════════════ -->
+    <main id="app-main" class="flex-1 min-w-0 h-screen overflow-y-auto bg-[#f8fafc] flex flex-col">
+
+        <!-- ── VIEW 1: POSTS KANBAN (DEFAULT HOME) ────────────────────────── -->
+        <div id="view-posts" class="p-8 flex flex-col gap-6 max-w-full">
+            <div class="flex flex-wrap items-center justify-between gap-4 border-b border-slate-200 pb-4">
+                <div>
+                    <h2 class="text-2xl font-bold text-slate-900 tracking-tight">Content Posts Kanban</h2>
+                    <p class="text-sm text-slate-500 mt-0.5">Production pipeline and publishing schedule across accounts and personas for September 2026.</p>
+                </div>
+            </div>
+            <div id="posts-root">
+                <!-- Populated by js/posts.js -->
+            </div>
+        </div>
+
+        <!-- ── VIEW 2: CONTENT TOPICS (PRODUCTION WORKSPACE) ─────────────── -->
+        <div id="view-topics" class="hidden p-8 flex flex-col gap-6 max-w-full">
+            <div class="border-b border-slate-200 pb-4">
+                <h2 class="text-2xl font-bold text-slate-900 tracking-tight">Topic Architecture</h2>
+                <p class="text-sm text-slate-500 mt-0.5">The 8 strategic content pillars directly driving post production and audience messaging.</p>
+            </div>
+            <div id="topics-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 pb-12">
+                <!-- Populated by js/topics.js -->
+            </div>
+        </div>
+
+        <!-- ── VIEW 3: STRATEGIC OBJECTIVES ──────────────────────────────── -->
+        <div id="view-objectives" class="hidden p-8 flex flex-col gap-6 max-w-full">
+            <div class="border-b border-slate-200 pb-4">
+                <h2 class="text-2xl font-bold text-slate-900 tracking-tight">Strategic Objectives</h2>
+                <p class="text-sm text-slate-500 mt-0.5">Scando's 5 core business and revenue objectives governing the marketing engine.</p>
+            </div>
+            <div id="objectives-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 pb-12">
+                <!-- Populated by js/objectives.js -->
+            </div>
+        </div>
+
+        <!-- ── VIEW 4: TARGET PERSONAS ───────────────────────────────────── -->
+        <div id="view-personas" class="hidden p-8 flex flex-col gap-6 max-w-full">
+            <div class="border-b border-slate-200 pb-4">
+                <h2 class="text-2xl font-bold text-slate-900 tracking-tight">Target Personas</h2>
+                <p class="text-sm text-slate-500 mt-0.5">The 6 decision-makers and audience profiles across Egypt, the Gulf, and the Odoo ecosystem.</p>
+            </div>
+            <div id="personas-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 pb-12">
+                <!-- Populated by js/personas.js -->
+            </div>
+        </div>
+
+        <!-- ── VIEW 5: PUBLISHING ACCOUNTS ───────────────────────────────── -->
+        <div id="view-accounts" class="hidden p-8 flex flex-col gap-6 max-w-full">
+            <div class="border-b border-slate-200 pb-4">
+                <h2 class="text-2xl font-bold text-slate-900 tracking-tight">Publishing Channels</h2>
+                <p class="text-sm text-slate-500 mt-0.5">Corporate pages, executive personal branding channels, and community accounts.</p>
+            </div>
+            <div id="accounts-grid" class="pb-12">
+                <!-- Populated by js/accounts.js -->
+            </div>
+        </div>
+
+    </main>
+
+    <!-- ── Slide Pane / Drawer Backdrop ──────────────────────────────────── -->
+    <div id="post-drawer-backdrop" onclick="closePostDrawer()"
+         class="hidden fixed inset-0 bg-slate-950/50 backdrop-blur-xs z-40 transition-opacity"></div>
+
+    <!-- ── Slide Pane / Drawer ───────────────────────────────────────────── -->
+    <aside id="post-drawer"
+           class="fixed top-0 right-0 h-full w-full sm:w-[520px] lg:w-[580px] bg-white shadow-2xl z-50 transform translate-x-full transition-transform duration-300 ease-in-out border-l border-slate-200">
+        <!-- Content populated by js/posts.js -->
+    </aside>
+
+    <!-- ── Application Scripts ───────────────────────────────────────────── -->
+    <script src="js/objectives.js"></script>
+    <script src="js/accounts.js"></script>
+    <script src="js/personas.js"></script>
+    <script src="js/topics.js"></script>
+    <script src="js/posts.js"></script>
+    <script src="js/app.js"></script>
+
+</body>
+</html>

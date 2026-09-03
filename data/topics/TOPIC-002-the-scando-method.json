@@ -1,0 +1,8 @@
+{
+  "id": "TOPIC-002",
+  "title": "The Scando Method: Incremental Delivery",
+  "title_ar": "منهجية سكاندو للتطبيق المرحلي",
+  "description": "The anti-Big-Bang implementation framework. Principles of staging ERP releases into 30-day tangible milestones to secure fast adoption, protect cash flow, and prevent operational paralysis.",
+  "objective_ids": ["OBJ-001", "OBJ-003"],
+  "persona_ids": ["PERS-001", "PERS-002", "PERS-003"]
+}

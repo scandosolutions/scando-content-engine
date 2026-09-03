@@ -1,0 +1,8 @@
+{
+  "id": "TOPIC-005",
+  "title": "ERP Selection & Partner Due Diligence",
+  "title_ar": "معايير اختيار النظام والشريك التنفيذي",
+  "description": "How modern business leaders cut through sales theater, evaluate ERP systems (Odoo vs competitors), assess implementation partner engineering depth, and avoid open-ended hourly billing traps.",
+  "objective_ids": ["OBJ-001", "OBJ-004"],
+  "persona_ids": ["PERS-002", "PERS-006"]
+}

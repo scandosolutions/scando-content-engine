@@ -1,0 +1,8 @@
+{
+  "id": "TOPIC-004",
+  "title": "Cash Visibility & Transformation ROI",
+  "title_ar": "الرؤية المالية وإثبات التحول بالأرقام",
+  "description": "Evaluating digital transformation through hard operational metrics: reducing inventory holding costs, accelerating receivables collection, and giving leaders a single real-time cash dashboard.",
+  "objective_ids": ["OBJ-003", "OBJ-004"],
+  "persona_ids": ["PERS-001", "PERS-002", "PERS-004"]
+}

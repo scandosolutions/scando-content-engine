@@ -1,0 +1,23 @@
+{
+  "id": "POST-024",
+  "account_id": "ACC-001",
+  "title": "The CFO's Guide to Phased Odoo Rollouts: Protecting the Balance Sheet",
+  "format": "Guide Post",
+  "status": "backlog",
+  "scheduled_date": "",
+  "published_date": "",
+  "topic_ids": [
+    "TOPIC-004",
+    "TOPIC-007"
+  ],
+  "objective_ids": [
+    "OBJ-003",
+    "OBJ-004"
+  ],
+  "persona_ids": [
+    "PERS-004",
+    "PERS-002"
+  ],
+  "content": "For a Chief Financial Officer or Finance Director, an ERP cutover is not an IT project—it is an existential risk to balance sheet integrity.\n\nIf the system stumbles:\n- Invoices don't clear, freezing receivables collections.\n- Inventory valuations fail to reconcile with supplier payables, exposing the company to tax audit re-assessments.\n- Bank reconciliations fall weeks behind.\n\nHere is how Scando's phased methodology safeguards financial governance throughout an Odoo rollout:\n\n1. Parallel General Ledger Verification: Historical charts of accounts run side-by-side with Odoo's automated journal entries until the trial balance matches to the single cent for two consecutive fiscal closures.\n2. Automated 3-Way Matching: Invoices cannot post to accounts payable without automated validation against goods receipt notes (GRN) and approved purchase orders.\n3. Real-Time ETA Tax Compliance: Every sales invoice automatically receives tax authority validation (UUID and QR code) synchronously with warehouse delivery.\n4. Real-Time Cash Flow Runway: Executive liquidity dashboards updating every 60 seconds across all bank accounts, open receivables, and mature payables.\n\nProtect your company's financial heartbeat while scaling your operational technology.\n\nDownload our CFO ERP Risk Mitigation Blueprint via the link above.",
+  "notes": "High-level financial governance guide on Scando LinkedIn. Speaks directly to CFOs and finance leaders."
+}

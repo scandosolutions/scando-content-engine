@@ -1,0 +1,21 @@
+{
+  "id": "POST-017",
+  "account_id": "ACC-001",
+  "title": "Why We Choose Flutter for Odoo Mobile Frontlines (And Why WebViews Fail)",
+  "format": "Technical Deep Dive",
+  "status": "this_month",
+  "scheduled_date": "",
+  "published_date": "",
+  "topic_ids": [
+    "TOPIC-006"
+  ],
+  "objective_ids": [
+    "OBJ-002"
+  ],
+  "persona_ids": [
+    "PERS-006",
+    "PERS-002"
+  ],
+  "content": "When software teams attempt to build mobile apps for Odoo, the common shortcut is wrapping Odoo's responsive web interface inside an Android/iOS WebView container.\n\nOn paper, it sounds fast and cheap.\n\nIn reality on the warehouse or delivery floor, it is a disaster:\n- 4-second latency between button tap and server response.\n- Janky scrolling when navigating 200 order line items.\n- Frequent blank screens whenever the network flutters.\n- Clunky camera barcode scanning that drains battery and misses 2 out of 5 codes under dim lighting.\n\nAt Scando, we standardize our frontline mobile architecture on native Flutter connected via optimized API endpoints:\n\n1. Native 60 FPS UI: Flutter compiles directly to machine ARM code. The interface responds with zero latency, providing immediate haptic feedback.\n2. Direct Hardware Barcode Integration: Instead of relying on slow camera autofocus, our Flutter apps talk directly to the hardware laser scan engines in Zebra and Honeywell terminals via native OEM SDKs. Scan time: 100 milliseconds.\n3. Local State Isolation: Business workflows run locally using SQLite and state management. The driver or picker can complete their entire route without a single drop in responsiveness, auto-syncing in the background.\n\nNever compromise frontline user experience with web wrappers. Engineering native performance is what turns software into an operational asset.",
+  "notes": "Technical engineering post for Scando LinkedIn. Positions Scando's custom development capabilities for GCC high-throughput clients."
+}

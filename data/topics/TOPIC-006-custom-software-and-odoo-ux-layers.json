@@ -1,0 +1,8 @@
+{
+  "id": "TOPIC-006",
+  "title": "Custom Software & Odoo UX Layers",
+  "title_ar": "البرمجيات المخصصة وتطوير واجهات أودو للميدان",
+  "description": "Architecting bespoke mobile (Flutter) and web operational layers on top of Odoo for GCC and international enterprises. Eliminating frontline user friction in warehousing, dispatch, retail, and field operations.",
+  "objective_ids": ["OBJ-002", "OBJ-001"],
+  "persona_ids": ["PERS-006", "PERS-002"]
+}

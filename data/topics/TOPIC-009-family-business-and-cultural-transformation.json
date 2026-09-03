@@ -1,0 +1,16 @@
+{
+  "id": "TOPIC-009",
+  "title": "Family Business & Cultural Transformation",
+  "title_ar": "التحول الثقافي والمؤسسي في الشركات العائلية المصرية",
+  "description": "Addressing the unique operational and psychological dynamics of Egyptian family businesses—navigating the shift from management by personal trust and one-man-show authority to systematic governance, generational leadership handover, and cultural change absorption without disrupting daily commercial operations.",
+  "objective_ids": [
+    "OBJ-001",
+    "OBJ-003",
+    "OBJ-004"
+  ],
+  "persona_ids": [
+    "PERS-001",
+    "PERS-002",
+    "PERS-004"
+  ]
+}

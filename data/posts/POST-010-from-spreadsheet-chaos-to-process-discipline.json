@@ -1,0 +1,23 @@
+{
+  "id": "POST-010",
+  "account_id": "ACC-001",
+  "title": "Case Study: Slashing Inventory Shrinkage from 14% to 0.4% in 60 Days",
+  "format": "Case Story",
+  "status": "backlog",
+  "scheduled_date": "",
+  "published_date": "",
+  "topic_ids": [
+    "TOPIC-004",
+    "TOPIC-003"
+  ],
+  "objective_ids": [
+    "OBJ-004",
+    "OBJ-003"
+  ],
+  "persona_ids": [
+    "PERS-001",
+    "PERS-002"
+  ],
+  "content": "A prominent Egyptian wholesale FMCG distributor with a 3,500 m² central hub was losing an estimated 14% of gross inventory every quarter to unexplained shrinkage, damaged goods, and unrecorded return shipments.\n\nTheir legacy workflow:\n- Picking orders written by hand on duplicate carbon paper slips.\n- Drivers loading trucks before dispatch invoices were recorded.\n- Monthly inventory audits took 14 days and required completely halting dispatches.\n\nIn July 2026, Scando was brought in to lead a 60-day turnaround using The Scando Method.\n\nHere was our 3-phase tactical deployment:\nPhase 1 (Days 1–20): Mandatory Barcode Reception & Put-Away\nEvery arriving pallet received a serialized barcode label. No item could be binned without a terminal scan matching the supplier Purchase Order.\n\nPhase 2 (Days 21–40): System-Enforced Dispatch Gate\nSecurity gates were integrated into the workflow. The gate guard cannot open the boom barrier without scanning a digital dispatch barcode confirming picking slip, invoice, and truck license plate match 100%.\n\nPhase 3 (Days 41–60): Cycle Counting on Mobile\nReplaced quarterly shutdowns with daily 15-minute rolling cycle counts of 20 random SKUs.\n\nKey Outcomes at Day 60:\n→ Inventory shrinkage dropped from 14.2% to 0.38%.\n→ Monthly stockout incidents decreased by 78%.\n→ Quarterly audit shutdown eliminated entirely, recovering 56 operational shipping days per year.\n\nPractical operational control beats massive multi-year IT promises.\n\nReview our full before-and-after technical architecture in our link above.",
+  "notes": "Data-rich B2B case study on Scando LinkedIn. Demonstrates concrete operational turnaround with zero fluff."
+}

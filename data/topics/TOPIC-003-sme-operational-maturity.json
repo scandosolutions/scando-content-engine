@@ -1,0 +1,8 @@
+{
+  "id": "TOPIC-003",
+  "title": "Warehouse, Inventory & Operational Control",
+  "title_ar": "انضباط المخازن ومنع تسريب البضائع",
+  "description": "How growing SMEs move from chaotic paper registers and WhatsApp orders to disciplined inventory control, real-time barcode tracking, and zero-leakage stock dispatch.",
+  "objective_ids": ["OBJ-003", "OBJ-001"],
+  "persona_ids": ["PERS-001", "PERS-003"]
+}

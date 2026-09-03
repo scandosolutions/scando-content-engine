@@ -1,0 +1,22 @@
+{
+  "id": "POST-003",
+  "account_id": "ACC-001",
+  "title": "Architecting High-Speed Frontline Apps on Odoo: The GCC Logistics Playbook",
+  "format": "Technical Breakdown",
+  "status": "this_month",
+  "scheduled_date": "",
+  "published_date": "",
+  "topic_ids": [
+    "TOPIC-006",
+    "TOPIC-001"
+  ],
+  "objective_ids": [
+    "OBJ-002",
+    "OBJ-001"
+  ],
+  "persona_ids": [
+    "PERS-006"
+  ],
+  "content": "Why do so many enterprise Odoo rollouts in Saudi Arabia and the UAE fail on the warehouse floor?\n\nBecause standard desktop ERP screens were designed for accountants sitting in air-conditioned offices—not for forklift operators handling 400 picks an hour in 45°C heat.\n\nWhen a picker has to:\n- Wait 4 seconds for a heavy web form to render\n- Navigate across 35 input fields to find one batch number\n- Cope with flaky Wi-Fi in the back aisle\n\nThey stop using the system. They write the SKU on their hand, fulfill the order manually, and your real-time ERP inventory is instantly compromised.\n\nAt Scando, we solve this adoption gap by engineering custom frontline software layers on top of Odoo:\n\n1. Dedicated Lightweight Frontends: We build purpose-driven Flutter and React mobile/scanner apps that expose ONLY what the worker needs (Scan Location → Scan Barcode → Confirm Qty). Transaction time: under 5 seconds.\n2. Local SQLite Caching & Offline-First Queues: If connectivity drops in the freezer aisle, the scan is recorded locally and auto-synced via background Odoo JSON-RPC APIs once reconnected.\n3. Zero-Friction Validation: Immediate haptic (vibration) and audio feedback prevents wrong-item picks before the forklift moves.\n\nTreat Odoo as your scalable transactional backend engine, but build tailored, high-speed UX layers for your frontline operations.\n\nAre you managing logistics or retail operations in KSA/UAE? Let's benchmark your current frontline pick time.",
+  "notes": "Targeted at GCC Operations Directors and Digital Transformation VPs on LinkedIn. Technical authority, architectural clarity, export positioning."
+}

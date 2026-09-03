@@ -1,0 +1,23 @@
+{
+  "id": "POST-021",
+  "account_id": "ACC-001",
+  "title": "Post-Mortem: Why a 14-Month Manufacturing ERP Project Failed (And How We Rescued It in 60 Days)",
+  "format": "Case Story",
+  "status": "backlog",
+  "scheduled_date": "",
+  "published_date": "",
+  "topic_ids": [
+    "TOPIC-001",
+    "TOPIC-004"
+  ],
+  "objective_ids": [
+    "OBJ-004",
+    "OBJ-001"
+  ],
+  "persona_ids": [
+    "PERS-002",
+    "PERS-001"
+  ],
+  "content": "In early 2026, we were approached by the board of an industrial plastics manufacturing plant in Egypt. They had spent 14 months and over $75,000 with an international agency attempting an ERP implementation.\n\nYet on the production floor, workers still tracked resin consumption on whiteboards.\n\nHere is our frank post-mortem of why that project collapsed:\n\n1. Scope Bloat Before Adoption: The previous agency tried to model complex multi-level robotic work center scheduling on day one. When operators struggled to log in, the whole schedule stopped.\n2. Neglected Floor Realities: Technicians on the factory floor wore industrial gloves and couldn't operate standard tiny web buttons on a touchscreen.\n3. Disconnected Scrap Tracking: Raw material shrinkage wasn't accounted for at the machine level, skewing the general ledger.\n\nHow Scando Led the 60-Day Rescue:\n- Phase 1 (Days 1–20): We stripped out 42 custom modules and restored standard Odoo Manufacturing (MRP) with large-button industrial kiosk screens.\n- Phase 2 (Days 21–40): Automated raw material issue slips directly tied to machine lot numbers via simple barcode scans.\n- Phase 3 (Days 41–60): Live finished goods reconciliation tying directly to warehouse pallet storage.\n\nResult: 100% shop floor logging compliance within 3 weeks, and the plant closed its first accurate monthly production cost balance in 2 years.\n\nRescue projects aren't about writing more code. They are about cutting the excess and respecting frontline human behavior.",
+  "notes": "Comprehensive turnaround case study for Scando LinkedIn. Demonstrates Scando's enterprise rescue capability."
+}

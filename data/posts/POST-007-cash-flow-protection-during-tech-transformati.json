@@ -1,0 +1,23 @@
+{
+  "id": "POST-007",
+  "account_id": "ACC-001",
+  "title": "The 10-Second Scan Rule: High-Throughput Warehouse Barcode Layers on Odoo",
+  "format": "Technical Breakdown",
+  "status": "backlog",
+  "scheduled_date": "",
+  "published_date": "",
+  "topic_ids": [
+    "TOPIC-006",
+    "TOPIC-003"
+  ],
+  "objective_ids": [
+    "OBJ-002",
+    "OBJ-003"
+  ],
+  "persona_ids": [
+    "PERS-006",
+    "PERS-003"
+  ],
+  "content": "In multi-branch distribution and high-volume retail across Saudi Arabia and the UAE, every second a warehouse picker pauses costs real money.\n\nIf picking an order requires:\n1. Walking to a workstation\n2. Reading a printed paper picking ticket\n3. Searching for a location\n4. Typing an SKU into a desktop form\n\nYour pick-to-ship velocity is capped. Even worse: human picking errors creep into 3–5% of dispatches, triggering expensive return logistics and customer churn.\n\nAt Scando, we build dedicated mobile barcode layers integrated with Odoo's backend to enforce «The 10-Second Scan Rule»:\n\n→ Step 1: Scan Bin/Location (System verifies the picker is at the exact shelf).\n→ Step 2: Scan Item Barcode (System validates SKU, batch number, and expiration date in real time).\n→ Step 3: Confirm Quantity via audio/vibration feedback.\n\nTotal cycle time per line item: under 10 seconds. Pick accuracy: 99.8%.\n\nBecause the app runs natively on rugged Android scanning terminals (Zebra, Honeywell) and communicates via optimized REST/RPC endpoints, it operates instantly even when deep inside high-bay steel racking where Wi-Fi signal drops.\n\nDon't force desktop software onto mobile workers. Build operational layers designed for frontline speed.\n\nConnect with our team to review your warehouse fulfillment architecture.",
+  "notes": "Targeted at logistics and operations leaders in GCC (KSA & UAE) on LinkedIn. Focus on speed, Zebra/Honeywell integration, and business ROI."
+}
